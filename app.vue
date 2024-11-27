@@ -142,7 +142,7 @@
     </footer>
 </template>
 
-< setup>
+<script setup>
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
@@ -185,10 +185,9 @@ useSeoMeta({
   ogTitle: 'Cube Skin韓式肌膚管理',
   description: 'a-GA液態飛梭·燈泡肌·負壓離子膜·斑密琳·韓式小氣泡',
   ogDescription: 'a-GA液態飛梭·燈泡肌·負壓離子膜·斑密琳·韓式小氣泡',
-  ogImage: 'https://cube-skin.nuxt.dev/img/p1.png',
-  twitterCard: 'Cube Skin韓式肌膚管理',
+  ogImage: '',
+  twitterCard: 'summary_large_image',
 })
+</script>
 
 
-
-</scrip>
