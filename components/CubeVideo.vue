@@ -1,17 +1,9 @@
 <template>
     <div>
-      <video 
-        ref="videoPlayer" 
-        :src="videoSrc" 
-        :controls="controls" 
-        :autoplay="autoplay" 
-        :loop="loop" 
-        @play="onPlay" 
-        @pause="onPause" 
-        style="max-width: 100%;"
-      >
-      Cube Skin韓式肌膚管理
-      </video>
+      <video class="h-full w-full rounded-lg" controls autoPlay>
+      <source src="/img/CubeVideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     </div>
   </template>
   
@@ -21,10 +13,9 @@
       return {
         videoSrc: "/img/CubeVideo.mp4", // Replace with your video URL
         controls: true,
-        autoplay: false,
+        autoplay: true,
         loop: false,
         muted: false,
-        type: "video/mp4",
       };
     },
     methods: {
