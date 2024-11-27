@@ -10,7 +10,7 @@
         @pause="onPause" 
         style="max-width: 100%;"
       >
-        Your browser does not support the video tag.
+      Cube Skin韓式肌膚管理
       </video>
     </div>
   </template>
