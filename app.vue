@@ -3,9 +3,9 @@
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="https://cube-skin.nuxt.dev" class="-m-1.5 p-1.5">
             <span class="sr-only">Cube skin</span>
-            <img class="h-28 w-auto" src="/img/Cube_logo.png" alt="" />
+            <img class="h-28 w-auto" src="/img/Cube_logo.png" alt="Cube skin" />
           </a>
         </div>
         <!-- <div class="flex lg:hidden">
@@ -142,7 +142,7 @@
     </footer>
 </template>
 
-<script setup>
+< setup>
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
@@ -165,34 +165,30 @@ const navigation = {
             ]),
         }),
       },
-      // {
-      //   name: 'Line',
-      //   href: 'https://lin.ee/fZw5twh',
-      //   icon: defineComponent({
-      //     render: () =>
-      //       h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-      //         h('path', {
-      //           d: 'M18 0C8.058 0 0 6.96 0 15.551c0 7.251 5.663 13.372 13.246 14.873 1.034.225 2.451.684 2.808.786.334.095.774.225.887-.319.1-.515.128-1.135.163-1.755.038-.662.081-1.349.131-2.06.071-.88.06-.962-.63-1.513-4.213-3.226-6.113-6.525-6.113-10.752 0-4.366 3.985-8.139 10.4-8.139 6.179 0 10.102 3.69 10.102 8.065 0 4.96-4.58 9.133-10.85 9.133-.816 0-1.633-.055-2.423-.153-.915-.116-1.046-.195-1.221-.873-.056-.23-.4-1.574-.416-1.708-.035-.275-.136-.574.077-.74.239-.187.531-.495.898-.812 1.483-1.294 3.07-2.92 3.936-3.847.474-.504.728-.96.755-1.352.064-.843-.637-1.36-1.704-1.36h-4.435c-1.012 0-2.64.024-4.402.388-1.49.298-2.78 1.015-2.888 2.577-.11 1.618 1.02 2.89 2.406 3.313.717.223 2.122.42 4.025.42h2.942c.402 0 .847.233 1.083.49.252.275.263.674.276.894.034.598.07 1.197.108 1.794.088 1.383.145 2.263.167 3.266.032 1.553-.35 2.273-.91 2.784-.47.424-1.028.686-2.152.924-1.25.267-2.876.383-4.432.272-6.698-.47-11.647-6.046-11.647-12.611C0 6.973 8.056 0 18 0z',
-      //         }),
-      //       ]),
-      //   }),
-      // },
-      // {
-      //   name: 'Flareme',
-      //   href: 'https://flareme.net/member_info.php?m2_member_sn=1902&utm_source=m2&utm_medium=mgm&utm_campaign=1902',
-      //   icon: defineComponent({
-      //     render: () =>
-      //       h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-      //         h('path', {
-      //           'fill-rule': 'evenodd',
-      //           d: 'M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z',
-      //           'clip-rule': 'evenodd',
-      //         }),
-      //       ]),
-      //   }),
-      // },
     ],
 }
 
-const mobileMenuOpen = ref(false)
-</script>
+// const mobileMenuOpen = ref(false)
+useHead({
+  title: 'Cube Skin韓式肌膚管理',
+  meta: [
+    { 
+      name: 'Cube Skin韓式肌膚管理',
+      content: 'Cube Skin韓式肌膚管理'
+    }
+  ]
+})
+
+
+useSeoMeta({
+  title: 'Cube Skin韓式肌膚管理',
+  ogTitle: 'Cube Skin韓式肌膚管理',
+  description: 'a-GA液態飛梭·燈泡肌·負壓離子膜·斑密琳·韓式小氣泡',
+  ogDescription: 'a-GA液態飛梭·燈泡肌·負壓離子膜·斑密琳·韓式小氣泡',
+  ogImage: 'https://cube-skin.nuxt.dev/img/p1.png',
+  twitterCard: 'Cube Skin韓式肌膚管理',
+})
+
+
+
+</scrip>
