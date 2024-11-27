@@ -24,6 +24,7 @@
         autoplay: false,
         loop: false,
         muted: false,
+        type: "video/mp4",
       };
     },
     methods: {
